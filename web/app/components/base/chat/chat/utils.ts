@@ -47,6 +47,7 @@ export const getProcessedInputs = (inputs: Record<string, any>, inputsForm: Inpu
         processedInputs[item.variable] = getProcessedFiles(inputValue)
     }
   })
+  processedInputs.current_url = window.location.href
 
   return processedInputs
 }
